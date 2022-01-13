@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
+
+declare var particlesJS : any
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-app';
+
+  ngOnInit() : void {
+    particlesJS.load('particles-js', 'assets/particles.json', function() { console.log('callback - particles.js config loaded'); 
+  });
+  }
 }
+
