@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ng-cli-deploy": {
+      "hosting": {
+        "sample-app": [
+          "ng-cli-deploy"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ng-cli-deploy"
+  }
+}
